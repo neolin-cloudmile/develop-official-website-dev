@@ -4,7 +4,7 @@ variable "instance_type" {}
 variable "instance_imagetype" {}
 variable "instance_subnetwork" {}
 
-resource "google_compute_instance" "vm_instance" {
+resource "google_compute_instance" "vm_bastionhost" {
   name         = "${var.instance_name}"
   zone         = "${var.instance_zone}"
   machine_type = "${var.instance_type}"

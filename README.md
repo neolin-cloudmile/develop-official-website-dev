@@ -1,5 +1,10 @@
 # develop-official-website-dev
+## Deploy the infra
+1. Enable API<br />
+2. Create bastion host on public-1<br />
+3. Create k8s on private-k8s<br />
 
+## Command Line
 1. Check project<br />
 gcloud projects list<br />
 2. Change the current project<br />
