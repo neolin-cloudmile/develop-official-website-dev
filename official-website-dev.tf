@@ -14,7 +14,7 @@ module "container-cluster" {
   cluster_location                    = "asia-east1"
   cluster_init_node                   = "3"
   cluster_network                     = var.develop-network-sharedvpc 
-  cluster_subnetwork                  = var.official-website-private-k8s 
-  cluster_secondary_rangename         = "official-website-dev-pod"
+  cluster_subnetwork                  = var.official-website-private-subnet-k8s 
+  cluster_secondary_rangename         = "official-website-dev-pods"
   cluster_service_secondary_rangename = "official-website-dev-services"
 }

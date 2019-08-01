@@ -10,7 +10,7 @@ data "google_client_config" "current" {}
 data "google_container_engine_versions" "default" {
   location = "${var.cluster_location}"
 }
-resource "google_container_cluster" "tf-gke-k8s-dev" {
+resource "google_container_cluster" "container-cluster" {
   name         = "${var.cluster_name}"
   location     = "${var.cluster_location}"
   initial_node_count = "${var.cluster_init_node}"
@@ -25,7 +25,8 @@ resource "google_container_cluster" "tf-gke-k8s-dev" {
   master_authorized_networks_config {
     cidr_blocks {
       # In your Cloud Shell command-line window, use dig to find the external IP address of your Cloud Shell
-      cidr_block   = "35.234.46.81/32"
+      # command line: dig +short myip.opendns.com @resolver1.opendns.com
+      cidr_block   = "35.221.135.252/32"
       display_name = "all-for-testing"
     }
   }
