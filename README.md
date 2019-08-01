@@ -37,5 +37,5 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/alias-ips<br />
 4. Virtual Privaet Cloud - Alias ranges overview<br />
 https://cloud.google.com/vpc/docs/alias-ip<br />
-5.Cloud SQL - MySQL - private IP
-https://cloud.google.com/sql/docs/mysql/private-ip#network_requirements
+5.Cloud SQL - MySQL - private IP<br />
+https://cloud.google.com/sql/docs/mysql/private-ip#network_requirements<br />
