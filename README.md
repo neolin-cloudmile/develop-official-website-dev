@@ -24,5 +24,7 @@ gcloud container clusters list<br />
 gcloud container clusters describe official-website-dev-cluster --region=asia-east1<br />
 9. Get-credentitals container cluster<br />
 gcloud container clusters get-credentials official-website-dev-cluster --region asia-east1
-10. List
-gcloud beta container subnets list-usable --project [SERVICE_PROJECT_ID] --network-project [HOST_PROJECT_ID] 
+10. List usable of container subnets
+gcloud beta container subnets list-usable --project [SERVICE_PROJECT_ID] --network-project [HOST_PROJECT_ID]
+
+## Reference Link 
