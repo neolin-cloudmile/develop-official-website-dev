@@ -1,8 +1,9 @@
 # develop-official-website-dev
 ## Deploy the infra
 1. Enable API<br />
-2. Create bastion host on public-1<br />
-3. Create k8s on private-k8s<br />
+2. Create a bastion host on public-1<br />
+3. Create a privatei cluster of container clsuter(GKE)<br />
+4.
 
 ## Command Line
 1. Check project<br />
@@ -21,3 +22,7 @@ gcloud compute instances list<br />
 gcloud container clusters list<br />
 8. Describe the container cluster<br />
 gcloud container clusters describe official-website-dev-cluster --region=asia-east1<br />
+9. Get-credentitals container cluster<br />
+gcloud container clusters get-credentials official-website-dev-cluster --region asia-east1
+10. List
+gcloud beta container subnets list-usable --project [SERVICE_PROJECT_ID] --network-project [HOST_PROJECT_ID] 
