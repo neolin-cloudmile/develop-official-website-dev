@@ -1,9 +1,10 @@
 # develop-official-website-dev
 ## Deploy the infra
-1. Enable API:Kubernetes Engine API, Memorystore for Redis API<br />
+1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API<br />
 2. Create a bastion host on public-1<br />
 3. Create a privatei cluster of container clsuter(GKE)<br />
 4. Create a memorystore for redis from host proejct<br />
+5. Create a Cloud SQL for MySQL<br />
 
 ## Command Line
 1. Check project<br />
@@ -36,3 +37,5 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/alias-ips<br />
 4. Virtual Privaet Cloud - Alias ranges overview<br />
 https://cloud.google.com/vpc/docs/alias-ip<br />
+5.Cloud SQL - MySQL - private IP
+https://cloud.google.com/sql/docs/mysql/private-ip#network_requirements
