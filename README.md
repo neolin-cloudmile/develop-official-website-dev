@@ -27,4 +27,12 @@ gcloud container clusters get-credentials official-website-dev-cluster --region 
 10. List usable of container subnets
 gcloud beta container subnets list-usable --project [SERVICE_PROJECT_ID] --network-project [HOST_PROJECT_ID]
 
-## Reference Link 
+## Reference Link
+1. Kubernetes Engine - Setting up clusters with shared VPC<br />
+https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc<br />
+2. Kubernetes Engine - Setting up a private cluster<br />
+https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters<br />
+3. Kubernetes Engine - Creating a VPC-native cluster<br />
+https://cloud.google.com/kubernetes-engine/docs/how-to/alias-ips<br />
+4. Virtual Privaet Cloud - Alias ranges overview<br />
+https://cloud.google.com/vpc/docs/alias-ip<br />
