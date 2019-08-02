@@ -27,6 +27,9 @@ gcloud container clusters describe official-website-dev-cluster --region=asia-ea
 gcloud container clusters get-credentials official-website-dev-cluster --region asia-east1
 10. List usable of container subnets
 gcloud beta container subnets list-usable --project [SERVICE_PROJECT_ID] --network-project [HOST_PROJECT_ID]
+11. Using Cloud Shell to access a private cluster - use dig to find the external IP address of your Cloud Sell
+dig +short myip.opendns.com @resolver1.opendns.com
+12. 
 
 ## Reference Link
 1. Kubernetes Engine - Setting up clusters with shared VPC<br />
