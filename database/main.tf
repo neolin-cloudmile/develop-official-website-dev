@@ -10,15 +10,18 @@ variable "db_disk_size" {}
 variable "db_disk_type" {}
 variable "resource_timeout" {}
 
+resource "google_compute_network" "peering_network" {
+  name = "peering-network"
+}
 resource "google_compute_global_address" "private_ip_address" {
   name          = "private-ip-address"
   purpose       = "VPC_PEERING"
   address_type  = "INTERNAL"
   prefix_length = 16
-  network       = "${var.db_private_network}"
+  network       = "${google_compute_network.peering_network.self_link}" 
 }
 resource "google_service_networking_connection" "private_vpc_connection" {
-  network                 = "${var.db_private_network}"
+  network                 = "${google_compute_network.peering_network.self_link}" 
   service                 = "servicenetworking.googleapis.com"
   reserved_peering_ranges = ["${google_compute_global_address.private_ip_address.name}"]
 }
@@ -35,7 +38,7 @@ resource "google_sql_database_instance" "master" {
     
     ip_configuration {
       ipv4_enabled    = "false"
-      private_network = "${var.db_private_network}" 
+      private_network = "${google_compute_network.peering_network.self_link}" 
     }
     backup_configuration {
       binary_log_enabled = "true" 
@@ -75,7 +78,7 @@ resource "google_sql_database_instance" "failover_replica" {
     
     ip_configuration {
       ipv4_enabled    = "false"
-      private_network = "${var.db_private_network}"
+      private_network = "${google_compute_network.peering_network.self_link}" 
     }
     disk_size = "${var.db_disk_size}"
     disk_type = "${var.db_disk_type}"
