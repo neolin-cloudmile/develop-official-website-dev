@@ -2,13 +2,12 @@ variable "db_name" {}
 variable "db_region" {}
 variable "db_version" {}
 variable "db_type" {}
-variable "db_private_newtork" {}
+variable "db_private_network" {}
 variable "db_backup_time" {}
 variable "db_maintenance_day" {}
 variable "db_maintenance_hour" {}
 variable "db_disk_size" {}
 variable "db_disk_type" {}
-variable "resource_timeout" {}
 variable "resource_timeout" {}
 
 resource "google_compute_global_address" "private_ip_address" {
