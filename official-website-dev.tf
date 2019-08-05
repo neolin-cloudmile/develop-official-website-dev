@@ -25,7 +25,7 @@ module "db-mysql" {
   db_region           = "asia-east1"
   db_version          = "MYSQL_5_7"
   db_type             = "db-n1-standard-2"
-  db_private_network  = var.develop-network-sharedvpc
+  network_sharedvpc   = var.develop-network-sharedvpc
   db_backup_time      = "04:00"
   db_maintenance_day  = "7"
   db_maintenance_hour = "7"

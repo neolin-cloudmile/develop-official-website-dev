@@ -42,5 +42,11 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/alias-ips<br />
 5. Virtual Privaet Cloud - Alias ranges overview<br />
 https://cloud.google.com/vpc/docs/alias-ip<br />
-6.Cloud SQL - MySQL - private IP<br />
+6. Cloud SQL - MySQL - private IP<br />
 https://cloud.google.com/sql/docs/mysql/private-ip#network_requirements<br />
+7. Cloud SQL - MySQL - Configuring private IP connectivity<br />
+https://cloud.google.com/sql/docs/mysql/configure-private-ip<br />
+8. Cloud SQL - MySQL - Overview of the high availability configuration<br />
+https://cloud.google.com/sql/docs/mysql/high-availability<br />
+9. GitHub - terraform-provider-google - google_service_networking_connection error<br />
+https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
