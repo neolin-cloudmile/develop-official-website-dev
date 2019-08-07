@@ -1,6 +1,6 @@
 # develop-official-website-dev
 ## Deploy the infra
-1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API<br />
+1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API, Cloud SQL Admin API, Container Scanning API<br />
 2. Create a bastion host on public-1<br />
 3. Create a privatei cluster of container clsuter(GKE)<br />
 4. Create a memorystore for redis from host proejct<br />
@@ -27,9 +27,10 @@ gcloud container clusters describe official-website-dev-cluster --region=asia-ea
 gcloud container clusters get-credentials official-website-dev-cluster --region asia-east1
 10. List usable of container subnets
 gcloud beta container subnets list-usable --project [SERVICE_PROJECT_ID] --network-project [HOST_PROJECT_ID]
-11. Using Cloud Shell to access a private cluster - use dig to find the external IP address of your Cloud Sell
-dig +short myip.opendns.com @resolver1.opendns.com
-12. 
+11. Using Cloud Shell to access a private cluster - use dig to find the external IP address of your Cloud Sell<br />
+dig +short myip.opendns.com @resolver1.opendns.com<br />
+12. Lists Cloud SQL instances in a given project<br />
+gcloud sql instances list<br />
 
 ## Reference Link
 1. Cloud SDK - gcloud reference - overview
@@ -50,3 +51,5 @@ https://cloud.google.com/sql/docs/mysql/configure-private-ip<br />
 https://cloud.google.com/sql/docs/mysql/high-availability<br />
 9. GitHub - terraform-provider-google - google_service_networking_connection error<br />
 https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
+10. Cloud SQL - MySQL - Connecting from Google Kubernetes Engine<br />
+https://cloud.google.com/sql/docs/mysql/connect-kubernetes-engine<br />
