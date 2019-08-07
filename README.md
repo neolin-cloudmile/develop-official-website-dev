@@ -33,6 +33,13 @@ dig +short myip.opendns.com @resolver1.opendns.com<br />
 gcloud sql instances list<br />
 13. Lists the backups of Cloud SQL<br />
 gcloud sql backups list --instance=official-website-dev-mysql<br />
+14. List existing images<br />
+gcloud container images list<br />
+15. List the images in the default repository (us.gcr.io)<br />
+gcloud container images list --repository=gcr.io/myproject<br />
+16. List the images in a specified repository, e.g. asia<br />
+gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
+
 
 ## Reference Link
 1. Cloud SDK - gcloud reference - overview
@@ -57,3 +64,7 @@ https://cloud.google.com/sql/docs/mysql/high-availability<br />
 https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
 11. Cloud SQL - MySQL - Connecting from Google Kubernetes Engine<br />
 https://cloud.google.com/sql/docs/mysql/connect-kubernetes-engine<br />
+12. VPC - Special configurations - Configuring private services access - procedure<br />
+https://cloud.google.com/vpc/docs/configure-private-services-access?hl=en_US&_ga=2.98105372.-209726674.1565071015#procedure<br />
+13. Cloud SDK - gcloud container images
+https://cloud.google.com/sdk/gcloud/reference/container/images/list
