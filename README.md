@@ -66,5 +66,7 @@ https://github.com/terraform-providers/terraform-provider-google/issues/3294<br 
 https://cloud.google.com/sql/docs/mysql/connect-kubernetes-engine<br />
 12. VPC - Special configurations - Configuring private services access - procedure<br />
 https://cloud.google.com/vpc/docs/configure-private-services-access?hl=en_US&_ga=2.98105372.-209726674.1565071015#procedure<br />
-13. Cloud SDK - gcloud container images
-https://cloud.google.com/sdk/gcloud/reference/container/images/list
+13. Cloud SDK - gcloud container images<br />
+https://cloud.google.com/sdk/gcloud/reference/container/images/list<br />
+14. Kubernetes Engine Tutorials - Deploying a containerized web application<br />
+https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app<br />
