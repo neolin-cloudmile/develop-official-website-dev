@@ -1,6 +1,6 @@
 # develop-official-website-dev
 ## Deploy the infra
-1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API, Cloud SQL Admin API, Container Scanning API<br />
+1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API, Cloud SQL Admin API, Container Analysis API, Binary Authorization API, Web Security Scanner API<br />
 2. Create a bastion host on public-1<br />
 3. Create a privatei cluster of container clsuter(GKE)<br />
 4. Create a memorystore for redis from host proejct<br />
@@ -31,6 +31,8 @@ gcloud beta container subnets list-usable --project [SERVICE_PROJECT_ID] --netwo
 dig +short myip.opendns.com @resolver1.opendns.com<br />
 12. Lists Cloud SQL instances in a given project<br />
 gcloud sql instances list<br />
+13. Lists the backups of Cloud SQL<br />
+gcloud sql backups list --instance=official-website-dev-mysql<br />
 
 ## Reference Link
 1. Cloud SDK - gcloud reference - overview
@@ -43,13 +45,15 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/alias-ips<br />
 5. Virtual Privaet Cloud - Alias ranges overview<br />
 https://cloud.google.com/vpc/docs/alias-ip<br />
-6. Cloud SQL - MySQL - private IP<br />
+6. Quickstart for Cloud SQL for MySQL
+https://cloud.google.com/sql/docs/mysql/quickstart
+7. Cloud SQL - MySQL - private IP<br />
 https://cloud.google.com/sql/docs/mysql/private-ip#network_requirements<br />
-7. Cloud SQL - MySQL - Configuring private IP connectivity<br />
+8. Cloud SQL - MySQL - Configuring private IP connectivity<br />
 https://cloud.google.com/sql/docs/mysql/configure-private-ip<br />
-8. Cloud SQL - MySQL - Overview of the high availability configuration<br />
+9. Cloud SQL - MySQL - Overview of the high availability configuration<br />
 https://cloud.google.com/sql/docs/mysql/high-availability<br />
-9. GitHub - terraform-provider-google - google_service_networking_connection error<br />
+10. GitHub - terraform-provider-google - google_service_networking_connection error<br />
 https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
-10. Cloud SQL - MySQL - Connecting from Google Kubernetes Engine<br />
+11. Cloud SQL - MySQL - Connecting from Google Kubernetes Engine<br />
 https://cloud.google.com/sql/docs/mysql/connect-kubernetes-engine<br />
