@@ -74,6 +74,7 @@ kubectl exec -it secret-test-pod -- /bin/bash<br />
 
 
 ## Reference Link
+### GCP
 1. Cloud SDK - gcloud reference - overview
 https://cloud.google.com/sdk/gcloud/reference/
 2. Kubernetes Engine - Setting up clusters with shared VPC<br />
@@ -108,9 +109,16 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc#creating_additional_firewall_rules<br />
 17. Cloud IAM > Managing roles and permissions > Creating and managing custom roles<br />
 https://cloud.google.com/iam/docs/creating-custom-roles<br />
-18. Github - Firewall change required by network admin<br />
+### Kubernetes & Other
+1. Kubernetes Online Documents
+https://kubernetes.io/docs/home/
+2. Github - Firewall change required by network admin<br />
 https://github.com/kubernetes/ingress-gce/issues/584<br />
-19. johnwu - GKE connect to CloudSQL<br />
+3. johnwu - GKE connect to CloudSQL<br />
 https://blog.johnwu.cc/article/gcp-kubernetes-connect-to-cloudsql.html<br />
-20. johnwu - GKE deploy docker images for toolbox
-https://blog.johnwu.cc/article/gcp-kubernetes-deploy-docker-image.html
+4. johnwu - GKE deploy docker images for toolbox<br />
+https://blog.johnwu.cc/article/gcp-kubernetes-deploy-docker-image.html<br />
+5. Kuberbetes - Tasks - Inject Data Into Application - Distribute Credentials Securely Using Secrets<Br /> 
+https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/<br />
+22. Kubernetes - Concepts - Configuration - Secrets<br />
+https://kubernetes.io/docs/concepts/configuration/secret/<br />
