@@ -39,7 +39,12 @@ gcloud container images list<br />
 gcloud container images list --repository=gcr.io/myproject<br />
 16. List the images in a specified repository, e.g. asia<br />
 gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
-
+17. List the namespace of GKE
+kubectl get namespace
+18. List the pods of designation namespace 
+kubectl get pods -n kube-system
+17. Describe the pods
+kubectl describe pods secret-test-pod
 
 ## Reference Link
 1. Cloud SDK - gcloud reference - overview
@@ -76,3 +81,5 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc#creating_additional_firewall_rules<br />
 17. Cloud IAM > Managing roles and permissions > Creating and managing custom roles<br />
 https://cloud.google.com/iam/docs/creating-custom-roles<br />
+18. Github - Firewall change required by network admin
+https://github.com/kubernetes/ingress-gce/issues/584
