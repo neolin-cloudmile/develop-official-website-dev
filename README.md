@@ -70,3 +70,9 @@ https://cloud.google.com/vpc/docs/configure-private-services-access?hl=en_US&_ga
 https://cloud.google.com/sdk/gcloud/reference/container/images/list<br />
 14. Kubernetes Engine Tutorials - Deploying a containerized web application<br />
 https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app<br />
+15. Kubernetes Engine > How-to guides > Configurung cluster networking > clusters with shared VPC<br />
+https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc<br />
+16. Kubernetes Engine > How-to guides > Configuring cluster networking > Clusters with shared VPC > Creating additional firewall rules<br />
+https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc#creating_additional_firewall_rules<br />
+17. Cloud IAM > Managing roles and permissions > Creating and managing custom roles<br />
+https://cloud.google.com/iam/docs/creating-custom-roles<br />
