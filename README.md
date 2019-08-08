@@ -45,6 +45,16 @@ kubectl get namespace<br />
 kubectl get pods -n kube-system<br />
 17. Describe the pods<br />
 kubectl describe pods secret-test-pod<br />
+18.Build a Image and push to gcr<br />
+export PROJECT_ID="$(gcloud config get-value project -q)"<br />
+docker build -t asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
+gcloud docker -- push asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
+19. List the images for designation repository<br />
+gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
+20.
+kubectl apply -f secret-pod.yaml
+21.
+kubectl delete -f secret-pod.yaml
 
 ## Reference Link
 1. Cloud SDK - gcloud reference - overview
