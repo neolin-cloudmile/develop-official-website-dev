@@ -71,7 +71,8 @@ kubectl apply -f secret-pod.yaml<br />
 kubectl delete -f secret-pod.yaml<br />
 29. Get a Shell to a Running Container<br />
 kubectl exec -it secret-test-pod -- /bin/bash<br />
-
+30. Connect with the mysql client<br />
+mysql --host=[CLOUD_SQL_PUBLIC_IP_ADDR] --user=root --password<br />
 
 ## Reference Link
 ### GCP
