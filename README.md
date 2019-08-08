@@ -39,12 +39,12 @@ gcloud container images list<br />
 gcloud container images list --repository=gcr.io/myproject<br />
 16. List the images in a specified repository, e.g. asia<br />
 gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
-17. List the namespace of GKE
-kubectl get namespace
-18. List the pods of designation namespace 
-kubectl get pods -n kube-system
-17. Describe the pods
-kubectl describe pods secret-test-pod
+17. List the namespace of GKE<br />
+kubectl get namespace<br />
+18. List the pods of designation namespace<br /> 
+kubectl get pods -n kube-system<br />
+17. Describe the pods<br />
+kubectl describe pods secret-test-pod<br />
 
 ## Reference Link
 1. Cloud SDK - gcloud reference - overview
