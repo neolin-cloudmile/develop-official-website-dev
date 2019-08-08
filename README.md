@@ -51,10 +51,13 @@ docker build -t asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
 gcloud docker -- push asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
 19. List the images for designation repository<br />
 gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
-20.
-kubectl apply -f secret-pod.yaml
-21.
-kubectl delete -f secret-pod.yaml
+20. Deploy container<br />
+kubectl apply -f secret-pod.yaml<br />
+21. Delete container<br />
+kubectl delete -f secret-pod.yaml<br />
+22. Get a Shell to a Running Container<br />
+kubectl exec -it secret-test-pod -- /bin/bash<br />
+
 
 ## Reference Link
 1. Cloud SDK - gcloud reference - overview
