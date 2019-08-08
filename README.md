@@ -91,5 +91,9 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc#creating_additional_firewall_rules<br />
 17. Cloud IAM > Managing roles and permissions > Creating and managing custom roles<br />
 https://cloud.google.com/iam/docs/creating-custom-roles<br />
-18. Github - Firewall change required by network admin
-https://github.com/kubernetes/ingress-gce/issues/584
+18. Github - Firewall change required by network admin<br />
+https://github.com/kubernetes/ingress-gce/issues/584<br />
+19. johnwu - GKE connect to CloudSQL<br />
+https://blog.johnwu.cc/article/gcp-kubernetes-connect-to-cloudsql.html<br />
+20. johnwu - GKE deploy docker images for toolbox
+https://blog.johnwu.cc/article/gcp-kubernetes-deploy-docker-image.html
