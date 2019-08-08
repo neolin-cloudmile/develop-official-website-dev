@@ -51,17 +51,25 @@ docker build -t asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
 gcloud docker -- push asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
 19. List the images for designation repository<br />
 gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
-20. List the secret of GKE<br />
+20. Create the Secret<br />
+kubectl apply -f https://k8s.io/examples/pods/inject/secret.yaml<br />
+21. Delete the Secret<br />
+kubectl delete -f https://k8s.io/examples/pods/inject/secret.yaml<br />
+22. Define container environment variables with data from multiple Secrets<br />
+kubectl create secret generic db-user --from-literal=db-username='db-admin'<br />
+23. Delete the secret<br />
+kubectl delete secret db-user<br />
+24. List the secret of GKE<br />
 kubectl get secret test-secret<br />
-21. Describe the secret of GKE<br />
+25. Describe the secret of GKE<br />
 kubectl describe secret test-secret<br />
-22. Describe the secret of GKE via yaml<br />
+26. Describe the secret of GKE via yaml<br />
 kubectl get secret describe test-secret -o yaml<br />
-23. Deploy container<br />
+27. Deploy container<br />
 kubectl apply -f secret-pod.yaml<br />
-24. Delete container<br />
+28. Delete container<br />
 kubectl delete -f secret-pod.yaml<br />
-25. Get a Shell to a Running Container<br />
+29. Get a Shell to a Running Container<br />
 kubectl exec -it secret-test-pod -- /bin/bash<br />
 
 
