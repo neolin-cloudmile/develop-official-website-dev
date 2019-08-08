@@ -93,9 +93,7 @@ https://cloud.google.com/sql/docs/mysql/private-ip#network_requirements<br />
 https://cloud.google.com/sql/docs/mysql/configure-private-ip<br />
 9. Cloud SQL - MySQL - Overview of the high availability configuration<br />
 https://cloud.google.com/sql/docs/mysql/high-availability<br />
-10. GitHub - terraform-provider-google - google_service_networking_connection error<br />
-https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
-11. Cloud SQL - MySQL - Connecting from Google Kubernetes Engine<br />
+10. Cloud SQL - MySQL - Connecting from Google Kubernetes Engine<br />
 https://cloud.google.com/sql/docs/mysql/connect-kubernetes-engine<br />
 12. VPC - Special configurations - Configuring private services access - procedure<br />
 https://cloud.google.com/vpc/docs/configure-private-services-access?hl=en_US&_ga=2.98105372.-209726674.1565071015#procedure<br />
@@ -120,5 +118,9 @@ https://blog.johnwu.cc/article/gcp-kubernetes-connect-to-cloudsql.html<br />
 https://blog.johnwu.cc/article/gcp-kubernetes-deploy-docker-image.html<br />
 5. Kuberbetes - Tasks - Inject Data Into Application - Distribute Credentials Securely Using Secrets<Br /> 
 https://kubernetes.io/docs/tasks/inject-data-application/distribute-credentials-secure/<br />
-22. Kubernetes - Concepts - Configuration - Secrets<br />
+6. Kubernetes - Concepts - Configuration - Secrets<br />
 https://kubernetes.io/docs/concepts/configuration/secret/<br />
+7. Linux vBird - Vi<br />
+http://linux.vbird.org/linux_basic/0310vi/0310vi-fc4.php<br />
+8. GitHub - terraform-provider-google - google_service_networking_connection error<br />
+https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
