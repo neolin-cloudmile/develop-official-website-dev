@@ -1,6 +1,6 @@
 # develop-official-website-dev
 ## Deploy the infra
-1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API, Cloud SQL Admin API, Container Analysis API, Binary Authorization API, Web Security Scanner API<br />
+1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API, Cloud SQL Admin API, Container Analysis API, Binary Authorization API, Web Security Scanner API, Cloud Build API<br />
 2. Create a bastion host on public-1<br />
 3. Create a privatei cluster of container clsuter(GKE)<br />
 4. Create a memorystore for redis from host proejct<br />
