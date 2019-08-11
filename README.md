@@ -73,6 +73,10 @@ kubectl delete -f secret-pod.yaml<br />
 kubectl exec -it secret-test-pod -- /bin/bash<br />
 30. Connect with the mysql client<br />
 mysql --host=[CLOUD_SQL_PUBLIC_IP_ADDR] --user=root --password<br />
+31. kubectl create secret generic cloudsql-instance-credentials<br /> 
+kubectl create secret generic cloudsql-instance-credentials --from-file=credentials.json="xxxxx-xxxxx.json"<br />
+# List the secret<br />
+kubectl get secret<br />
 
 ## Reference Link
 ### GCP
