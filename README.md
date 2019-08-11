@@ -76,8 +76,15 @@ mysql --host=[CLOUD_SQL_PUBLIC_IP_ADDR] --user=root --password<br />
 mysql --host=cloudsql-proxy-service --user=$username --password=$password<br />
 31. kubectl create secret generic cloudsql-instance-credentials<br /> 
 kubectl create secret generic cloudsql-instance-credentials --from-file=credentials.json="xxxxx-xxxxx.json"<br />
-# List the secret<br />
+32. List the secret<br />
 kubectl get secret<br />
+33. Describe the deployment<br />
+kubectl describe deployment wordpress<br />
+34.
+kubectl logs -l app=wordpress -c web
+35.
+kubectl logs -l app=wordpress -c cloudsql-proxy
+
 
 ## Reference Link
 ### GCP
@@ -130,3 +137,5 @@ https://kubernetes.io/docs/concepts/configuration/secret/<br />
 http://linux.vbird.org/linux_basic/0310vi/0310vi-fc4.php<br />
 8. GitHub - terraform-provider-google - google_service_networking_connection error<br />
 https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
+9. Using Google Cloud SQL from a WordPress Deployment
+https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/tree/master/cloudsql
