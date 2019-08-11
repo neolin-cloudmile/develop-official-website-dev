@@ -137,5 +137,5 @@ https://kubernetes.io/docs/concepts/configuration/secret/<br />
 http://linux.vbird.org/linux_basic/0310vi/0310vi-fc4.php<br />
 8. GitHub - terraform-provider-google - google_service_networking_connection error<br />
 https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
-9. Using Google Cloud SQL from a WordPress Deployment
-https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/tree/master/cloudsql
+9. Using Google Cloud SQL from a WordPress Deployment<br />
+https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/tree/master/cloudsql<br />
