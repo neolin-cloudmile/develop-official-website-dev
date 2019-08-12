@@ -16,7 +16,7 @@ gcloud compute networks list<br />
 4. List the subnets<br />
 gcloud compute networks subnets list<br />
 5. Describe the subnets<br />
-gcloud compute networks subnets describe official-website-private-k8s --region=asia-east1<br />
+gcloud compute networks subnets describe official-website-private-subnet-k8s --region=asia-east1<br />
 6. List the instance of GKE<br />
 gcloud compute instances list<br />
 7. List the container cluster<br /> 
