@@ -16,7 +16,7 @@ gcloud compute networks list<br />
 4. List the subnets<br />
 gcloud compute networks subnets list<br />
 5. Describe the subnets<br />
-gcloud compute networks subnets describe official-website-public-subnet-2 --region=asia-east1<br />
+gcloud compute networks subnets describe official-website-private-k8s --region=asia-east1<br />
 6. List the instance of GKE<br />
 gcloud compute instances list<br />
 7. List the container cluster<br /> 
@@ -80,11 +80,14 @@ kubectl create secret generic cloudsql-instance-credentials --from-file=credenti
 kubectl get secret<br />
 33. Describe the deployment<br />
 kubectl describe deployment wordpress<br />
-34.
-kubectl logs -l app=wordpress -c web
-35.
-kubectl logs -l app=wordpress -c cloudsql-proxy
-
+34.<br />
+kubectl logs -l app=wordpress -c web<br/ >
+35.<br />
+kubectl logs -l app=wordpress -c cloudsql-proxy<br />
+36. Create secondary ip address on existing subnet<br />
+gcloud compute networks subnets update official-website-private-subnet-k8s --add-secondary-ranges official-website-dev-pods=10.8.0.0/14,official-website-dev-services=10.137.0.0/20 --region=asia-east1<br />
+37. Show the currect project<br />
+gcloud config get-value project<br />
 
 ## Reference Link
 ### GCP
@@ -120,6 +123,9 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc#creating_additional_firewall_rules<br />
 17. Cloud IAM > Managing roles and permissions > Creating and managing custom roles<br />
 https://cloud.google.com/iam/docs/creating-custom-roles<br />
+18. gcloud compute networks subnets update<br />
+https://cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/update<br />
+
 ### Kubernetes & Other
 1. Kubernetes Online Documents
 https://kubernetes.io/docs/home/
