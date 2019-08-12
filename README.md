@@ -88,6 +88,16 @@ kubectl logs -l app=wordpress -c cloudsql-proxy<br />
 gcloud compute networks subnets update official-website-private-subnet-k8s --add-secondary-ranges official-website-dev-pods=10.8.0.0/14,official-website-dev-services=10.137.0.0/20 --region=asia-east1<br />
 37. Show the currect project<br />
 gcloud config get-value project<br />
+38. Add Host Service Agent User to service account of GKE of service project<br />
+gcloud projects add-iam-policy-binding [HOST_PROJECT_ID] \<br />
+    --member serviceAccount:service-[SERVICE_PROJECT_1_NUM]@container-engine-robot.iam.gserviceaccount.com \<br />
+    --role roles/container.hostServiceAgentUser<br />
+39. List a project's usable subnets and secondary IP ranges<br />
+gcloud container subnets list-usable \<br />
+    --project [SERVICE_PROJECT_ID] \<br />
+    --network-project [HOST_PROJECT_ID]<br />
+40. SSH to node of GKE from Cloud Shell<br />
+gcloud compute ssh gke-official-website-dev-default-pool-11c63745-gvf2 --project official-website-dev --zone asia-east1-c<br />
 
 ## Reference Link
 ### GCP
@@ -125,6 +135,8 @@ https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-shared-vpc#creati
 https://cloud.google.com/iam/docs/creating-custom-roles<br />
 18. gcloud compute networks subnets update<br />
 https://cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/update<br />
+19. gcloud services list<br />
+https://cloud.google.com/sdk/gcloud/reference/services/list<br />
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
