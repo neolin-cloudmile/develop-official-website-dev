@@ -1,6 +1,6 @@
 # develop-official-website-dev
 ## Deploy the infra
-1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API, Cloud SQL Admin API, Container Analysis API, Binary Authorization API, Web Security Scanner API, Cloud Build API<br />
+1. Enable API:Kubernetes Engine API, Memorystore for Redis API, Service Networking API, Cloud SQL Admin API, Container Analysis API, Binary Authorization API, Web Security Scanner API, Cloud Build API, Google Container Registry API, Cloud Source Repositories API<br />
 2. Create a bastion host on public-1<br />
 3. Create a privatei cluster of container clsuter(GKE)<br />
 4. Create a memorystore for redis from host proejct<br />
@@ -98,6 +98,10 @@ gcloud container subnets list-usable \<br />
     --network-project [HOST_PROJECT_ID]<br />
 40. SSH to node of GKE from Cloud Shell<br />
 gcloud compute ssh gke-official-website-dev-default-pool-11c63745-gvf2 --project official-website-dev --zone asia-east1-c<br />
+41. List Service APIs<br />
+gcloud services list --enabled | grep container<br />
+42. Enable the Service APIs<br />
+gcloud services enable sourcerepo.googleapis.com<br />
 
 ## Reference Link
 ### GCP
@@ -137,6 +141,9 @@ https://cloud.google.com/iam/docs/creating-custom-roles<br />
 https://cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/update<br />
 19. gcloud services list<br />
 https://cloud.google.com/sdk/gcloud/reference/services/list<br />
+20. Creating GKE private clusters with network proxies for master access<br />
+https://cloud.google.com/solutions/creating-kubernetes-engine-private-clusters-with-net-proxies<br />
+
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
@@ -157,3 +164,7 @@ http://linux.vbird.org/linux_basic/0310vi/0310vi-fc4.php<br />
 https://github.com/terraform-providers/terraform-provider-google/issues/3294<br />
 9. Using Google Cloud SQL from a WordPress Deployment<br />
 https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/tree/master/cloudsql<br />
+10. Google Cloud Build deploy to GKE Private Cluster<br />
+https://stackoverflow.com/questions/51944817/google-cloud-build-deploy-to-gke-private-cluster<br />
+11. Using Container Registry's Docker Hub mirror<br />
+https://cloud.google.com/container-registry/docs/using-dockerhub-mirroring<br />
