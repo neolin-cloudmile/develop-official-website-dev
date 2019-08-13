@@ -102,6 +102,9 @@ gcloud compute ssh gke-official-website-dev-default-pool-11c63745-gvf2 --project
 gcloud services list --enabled | grep container<br />
 42. Enable the Service APIs<br />
 gcloud services enable sourcerepo.googleapis.com<br />
+43. List .git file<br />
+find . -type f | grep -i ".git"<br />
+
 
 ## Reference Link
 ### GCP
@@ -149,7 +152,10 @@ https://cloud.google.com/container-registry/docs/pushing-and-pulling<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters#docker_hub<br />
 23. Using Container Registry's Docker Hub mirror<br />
 https://cloud.google.com/container-registry/docs/using-dockerhub-mirroring<br />
-
+24.Binary Authorization - Quickstart<br />
+https://cloud.google.com/binary-authorization/docs/quickstart<br />
+25.Cloud NAT - Example GKE Setup<br />
+https://cloud.google.com/nat/docs/gke-example<br />
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
