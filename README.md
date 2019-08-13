@@ -156,6 +156,8 @@ https://cloud.google.com/container-registry/docs/using-dockerhub-mirroring<br />
 https://cloud.google.com/binary-authorization/docs/quickstart<br />
 25.Cloud NAT - Example GKE Setup<br />
 https://cloud.google.com/nat/docs/gke-example<br />
+26. Getting vulnerabilities and metadata for images<br />
+https://cloud.google.com/container-registry/docs/get-image-vulnerabilities<br />
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
