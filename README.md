@@ -143,7 +143,10 @@ https://cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/update<br
 https://cloud.google.com/sdk/gcloud/reference/services/list<br />
 20. Creating GKE private clusters with network proxies for master access<br />
 https://cloud.google.com/solutions/creating-kubernetes-engine-private-clusters-with-net-proxies<br />
-
+21. Pushing and pulling images<br />
+https://cloud.google.com/container-registry/docs/pushing-and-pulling<br />
+22. Can't pull image from public Docker Hub<br />
+https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters#docker_hub<br />
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
