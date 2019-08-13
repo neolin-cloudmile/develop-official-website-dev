@@ -147,6 +147,9 @@ https://cloud.google.com/solutions/creating-kubernetes-engine-private-clusters-w
 https://cloud.google.com/container-registry/docs/pushing-and-pulling<br />
 22. Can't pull image from public Docker Hub<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters#docker_hub<br />
+23. Using Container Registry's Docker Hub mirror<br />
+https://cloud.google.com/container-registry/docs/using-dockerhub-mirroring<br />
+
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
