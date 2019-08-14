@@ -104,7 +104,8 @@ gcloud services list --enabled | grep container<br />
 gcloud services enable sourcerepo.googleapis.com<br />
 43. List .git file<br />
 find . -type f | grep -i ".git"<br />
-
+44. Connect to bastion from Cloud Shell<br />
+gcloud compute ssh official-website-dev-bastionhost --zone asia-east1-a -- -A<br />
 
 ## Reference Link
 ### GCP
@@ -158,6 +159,8 @@ https://cloud.google.com/binary-authorization/docs/quickstart<br />
 https://cloud.google.com/nat/docs/gke-example<br />
 26. Getting vulnerabilities and metadata for images<br />
 https://cloud.google.com/container-registry/docs/get-image-vulnerabilities<br />
+27. Cloud NAT - Shared VPC<br />
+https://cloud.google.com/nat/docs/overview#shared_vpc<br />
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
