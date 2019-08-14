@@ -153,9 +153,9 @@ https://cloud.google.com/container-registry/docs/pushing-and-pulling<br />
 https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters#docker_hub<br />
 23. Using Container Registry's Docker Hub mirror<br />
 https://cloud.google.com/container-registry/docs/using-dockerhub-mirroring<br />
-24.Binary Authorization - Quickstart<br />
+24. Binary Authorization - Quickstart<br />
 https://cloud.google.com/binary-authorization/docs/quickstart<br />
-25.Cloud NAT - Example GKE Setup<br />
+25. Cloud NAT - Example GKE Setup<br />
 https://cloud.google.com/nat/docs/gke-example<br />
 26. Getting vulnerabilities and metadata for images<br />
 https://cloud.google.com/container-registry/docs/get-image-vulnerabilities<br />
