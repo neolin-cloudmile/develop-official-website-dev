@@ -161,6 +161,14 @@ https://cloud.google.com/nat/docs/gke-example<br />
 https://cloud.google.com/container-registry/docs/get-image-vulnerabilities<br />
 27. Cloud NAT - Shared VPC<br />
 https://cloud.google.com/nat/docs/overview#shared_vpc<br />
+28. Google-managed encryption keys<br />
+https://cloud.google.com/storage/docs/encryption/default-keys<br />
+29. Resource Quotas<br />
+https://cloud.google.com/compute/quotas<br />
+30. Getting started with GitLab CI/CD and Google Cloud Platform<br />
+https://about.gitlab.com/2018/04/24/getting-started-gitlab-ci-gcp/<br />
+31. How to set up Gitlab CI/CD with Google Cloud Container Registry and Kubernetes<br />
+https://medium.com/@davivc/how-to-set-up-gitlab-ci-cd-with-google-cloud-container-registry-and-kubernetes-fa88ab7b1295<br />
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
