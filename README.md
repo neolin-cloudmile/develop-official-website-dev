@@ -171,6 +171,12 @@ https://about.gitlab.com/2018/04/24/getting-started-gitlab-ci-gcp/<br />
 https://medium.com/@davivc/how-to-set-up-gitlab-ci-cd-with-google-cloud-container-registry-and-kubernetes-fa88ab7b1295<br />
 32. Gitlab Runner talking to GCR<br />
 https://stroebitzer.com/2018/09/28/gitlab-gcr.html<br />
+33.Architectural overview of Cloud Endpoints<br />
+https://cloud.google.com/endpoints/docs/openapi/architecture-overview<br />
+34. About Cloud Endpoints<br />
+https://cloud.google.com/endpoints/docs/openapi/about-cloud-endpoints<br />
+35. Getting started with Cloud Endpoints on GKE<br />
+https://cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine<br />
 
 ### Kubernetes & Other
 1. Kubernetes Online Documents
