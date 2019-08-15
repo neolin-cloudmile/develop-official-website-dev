@@ -106,6 +106,12 @@ gcloud services enable sourcerepo.googleapis.com<br />
 find . -type f | grep -i ".git"<br />
 44. Connect to bastion from Cloud Shell<br />
 gcloud compute ssh official-website-dev-bastionhost --zone asia-east1-a -- -A<br />
+45. List Containers by Pod<br />
+kubectl get pods -n default -o=jsonpath='{range .items[*]}{"\n"}{.metadata.name}{":\t"}{range .spec.containers[*]}{.image}{", "}{end}{end}' | sort<br />
+46. List Container name by Pod<br />
+kubectl get pods esp-echo-84949c578-nfrz4 -n default -o jsonpath='{.spec.containers[*].name}'<br />
+47. Connect to a container from multi containers of single Pod<br />
+kubectl exec -it esp-echo-84949c578-nfrz4 -c echo -- /bin/bash<br />
 
 ## Reference Link
 ### GCP
@@ -201,3 +207,5 @@ https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/tree/master/clo
 https://stackoverflow.com/questions/51944817/google-cloud-build-deploy-to-gke-private-cluster<br />
 11. Using Container Registry's Docker Hub mirror<br />
 https://cloud.google.com/container-registry/docs/using-dockerhub-mirroring<br />
+12. List All Container Images Running in a Cluster<br />
+https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/<br />
