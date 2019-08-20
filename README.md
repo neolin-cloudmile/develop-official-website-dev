@@ -190,7 +190,17 @@ https://cloud.google.com/endpoints/docs/openapi/about-cloud-endpoints<br />
 35. Getting started with Cloud Endpoints on GKE<br />
 https://cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine<br />
 
-### Kubernetes & Other
+### MongoDB Atlas
+1. MongoDB Atlas - GCP<br />
+https://docs.atlas.mongodb.com/reference/google-gcp/<br />
+2. MongoDB Atlas - The mongo Shell<br />
+https://docs.mongodb.com/manual/mongo/<br />
+3. MongoDB Atlas - mongo Shell Quick Reference<br />
+https://docs.mongodb.com/manual/reference/mongo-shell/<br />
+4. MongoDB Atlas - Set up a Network Peering Connection<br />
+https://docs.atlas.mongodb.com/security-vpc-peering/<br />
+
+### Kubernetes & Others 
 1. Kubernetes Online Documents
 https://kubernetes.io/docs/home/
 2. Github - Firewall change required by network admin<br />
