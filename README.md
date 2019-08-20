@@ -193,6 +193,17 @@ https://cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine<br
 https://cloud.google.com/endpoints/docs/openapi/deleting-an-api-and-instances<br />
 37. Cloud SQL for MySQL - Importing data into Cloud SQL
 https://cloud.google.com/sql/docs/mysql/import-export/importing
+38. Stackdriver Monitoring - documentation<br />
+https://cloud.google.com/monitoring/docs/<br />
+39. Stackdriver Monitoring - Creating Charts<br />
+https://cloud.google.com/monitoring/charts/<br />
+40 .Stackdriver Monitoring - Using dashboards<br />
+https://cloud.google.com/monitoring/charts/dashboards<br />
+41. Exporting with the Logs Viewer<br />
+https://cloud.google.com/logging/docs/export/configure_export_v2<br />
+42. Cloud Storage - Creating storage buckets<br />
+https://cloud.google.com/storage/docs/creating-buckets<br />
+
 
 ### MongoDB Atlas
 1. MongoDB Atlas - GCP<br />
