@@ -189,9 +189,7 @@ https://cloud.google.com/endpoints/docs/openapi/architecture-overview<br />
 https://cloud.google.com/endpoints/docs/openapi/about-cloud-endpoints<br />
 35. Getting started with Cloud Endpoints on GKE<br />
 https://cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine<br />
-36. Getting started with Cloud Endpoints on GKE<br />
-https://cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine<br />
-37.Deleting an API and API instances<br />
+36. Deleting an API and API instances<br />
 https://cloud.google.com/endpoints/docs/openapi/deleting-an-api-and-instances<br />
 
 ### MongoDB Atlas
