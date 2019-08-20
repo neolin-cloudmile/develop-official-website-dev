@@ -47,7 +47,7 @@ kubectl get pods -n kube-system<br />
 kubectl describe pods secret-test-pod<br />
 20. Build a Image and push to gcr<br />
 export PROJECT_ID="$(gcloud config get-value project -q)"<br />
-docker build -t asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
+docker build -t asia.gcr.io/${PROJECT_ID}/secret-pod:v1 .<br />
 gcloud docker -- push asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
 21. List the images for designation repository<br />
 gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
