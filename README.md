@@ -43,76 +43,76 @@ gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
 kubectl get namespace<br />
 18. List the pods of designation namespace<br /> 
 kubectl get pods -n kube-system<br />
-17. Describe the pods<br />
+19. Describe the pods<br />
 kubectl describe pods secret-test-pod<br />
-18.Build a Image and push to gcr<br />
+20. Build a Image and push to gcr<br />
 export PROJECT_ID="$(gcloud config get-value project -q)"<br />
 docker build -t asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
 gcloud docker -- push asia.gcr.io/${PROJECT_ID}/secret-pod:v1<br />
-19. List the images for designation repository<br />
+21. List the images for designation repository<br />
 gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
-20. Create the Secret<br />
+22. Create the Secret<br />
 kubectl apply -f https://k8s.io/examples/pods/inject/secret.yaml<br />
-21. Delete the Secret<br />
+23. Delete the Secret<br />
 kubectl delete -f https://k8s.io/examples/pods/inject/secret.yaml<br />
-22. Define container environment variables with data from multiple Secrets<br />
+24. Define container environment variables with data from multiple Secrets<br />
 kubectl create secret generic db-user --from-literal=db-username='db-admin'<br />
-23. Delete the secret<br />
+25. Delete the secret<br />
 kubectl delete secret db-user<br />
-24. List the secret of GKE<br />
+26. List the secret of GKE<br />
 kubectl get secret test-secret<br />
-25. Describe the secret of GKE<br />
+27. Describe the secret of GKE<br />
 kubectl describe secret test-secret<br />
-26. Describe the secret of GKE via yaml<br />
+28. Describe the secret of GKE via yaml<br />
 kubectl get secret describe test-secret -o yaml<br />
-27. Deploy container<br />
+29. Deploy container<br />
 kubectl apply -f secret-pod.yaml<br />
-28. Delete container<br />
+30. Delete container<br />
 kubectl delete -f secret-pod.yaml<br />
-29. Get a Shell to a Running Container<br />
+31. Get a Shell to a Running Container<br />
 kubectl exec -it secret-test-pod -- /bin/bash<br />
-30. Connect with the mysql client<br />
+32. Connect with the mysql client<br />
 mysql --host=[CLOUD_SQL_PUBLIC_IP_ADDR] --user=root --password<br />
 mysql --host=cloudsql-proxy-service --user=$username --password=$password<br />
-31. kubectl create secret generic cloudsql-instance-credentials<br /> 
+33. kubectl create secret generic cloudsql-instance-credentials<br /> 
 kubectl create secret generic cloudsql-instance-credentials --from-file=credentials.json="xxxxx-xxxxx.json"<br />
-32. List the secret<br />
+34. List the secret<br />
 kubectl get secret<br />
-33. Describe the deployment<br />
+35. Describe the deployment<br />
 kubectl describe deployment wordpress<br />
-34.<br />
+36. Show logs by label<br />
 kubectl logs -l app=wordpress -c web<br/ >
-35.<br />
+37.Shoe logs by container<br />
 kubectl logs -l app=wordpress -c cloudsql-proxy<br />
-36. Create secondary ip address on existing subnet<br />
+38. Create secondary ip address on existing subnet<br />
 gcloud compute networks subnets update official-website-private-subnet-k8s --add-secondary-ranges official-website-dev-pods=10.8.0.0/14,official-website-dev-services=10.137.0.0/20 --region=asia-east1<br />
-37. Show the currect project<br />
+39. Show the currect project<br />
 gcloud config get-value project<br />
-38. Add Host Service Agent User to service account of GKE of service project<br />
+40. Add Host Service Agent User to service account of GKE of service project<br />
 gcloud projects add-iam-policy-binding [HOST_PROJECT_ID] \<br />
     --member serviceAccount:service-[SERVICE_PROJECT_1_NUM]@container-engine-robot.iam.gserviceaccount.com \<br />
     --role roles/container.hostServiceAgentUser<br />
-39. List a project's usable subnets and secondary IP ranges<br />
+41. List a project's usable subnets and secondary IP ranges<br />
 gcloud container subnets list-usable \<br />
     --project [SERVICE_PROJECT_ID] \<br />
     --network-project [HOST_PROJECT_ID]<br />
-40. SSH to node of GKE from Cloud Shell<br />
+42. SSH to node of GKE from Cloud Shell<br />
 gcloud compute ssh gke-official-website-dev-default-pool-11c63745-gvf2 --project official-website-dev --zone asia-east1-c<br />
-41. List Service APIs<br />
+43. List Service APIs<br />
 gcloud services list --enabled | grep container<br />
-42. Enable the Service APIs<br />
+44. Enable the Service APIs<br />
 gcloud services enable sourcerepo.googleapis.com<br />
-43. List .git file<br />
+45. List .git file<br />
 find . -type f | grep -i ".git"<br />
-44. Connect to bastion from Cloud Shell<br />
+46. Connect to bastion from Cloud Shell<br />
 gcloud compute ssh official-website-dev-bastionhost --zone asia-east1-a -- -A<br />
-45. List Containers by Pod<br />
+47. List Containers by Pod<br />
 kubectl get pods -n default -o=jsonpath='{range .items[*]}{"\n"}{.metadata.name}{":\t"}{range .spec.containers[*]}{.image}{", "}{end}{end}' | sort<br />
-46. List Container name by Pod<br />
+48. List Container name by Pod<br />
 kubectl get pods esp-echo-84949c578-nfrz4 -n default -o jsonpath='{.spec.containers[*].name}'<br />
-47. Connect to a container from multi containers of single Pod<br />
+49. Connect to a container from multi containers of single Pod<br />
 kubectl exec -it esp-echo-84949c578-nfrz4 -c echo -- /bin/bash<br />
-48.<br />
+50.<br />
 docker pull casperfrx/mongodb-shell<br />
 docker images -a<br />
 docker tag casperfrx/mongodb-shell asia.gcr.io/official-website-dev/mongo-shell:v1<br />
