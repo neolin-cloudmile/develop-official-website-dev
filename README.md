@@ -191,6 +191,8 @@ https://cloud.google.com/endpoints/docs/openapi/about-cloud-endpoints<br />
 https://cloud.google.com/endpoints/docs/openapi/get-started-kubernetes-engine<br />
 36. Deleting an API and API instances<br />
 https://cloud.google.com/endpoints/docs/openapi/deleting-an-api-and-instances<br />
+37. Cloud SQL for MySQL - Importing data into Cloud SQL
+https://cloud.google.com/sql/docs/mysql/import-export/importing
 
 ### MongoDB Atlas
 1. MongoDB Atlas - GCP<br />
