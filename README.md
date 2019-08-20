@@ -197,7 +197,7 @@ https://cloud.google.com/sql/docs/mysql/import-export/importing
 https://cloud.google.com/monitoring/docs/<br />
 39. Stackdriver Monitoring - Creating Charts<br />
 https://cloud.google.com/monitoring/charts/<br />
-40 .Stackdriver Monitoring - Using dashboards<br />
+40. Stackdriver Monitoring - Using dashboards<br />
 https://cloud.google.com/monitoring/charts/dashboards<br />
 41. Exporting with the Logs Viewer<br />
 https://cloud.google.com/logging/docs/export/configure_export_v2<br />
