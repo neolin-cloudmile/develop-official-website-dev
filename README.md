@@ -209,6 +209,10 @@ https://cloud.google.com/security-scanner/docs/overview<br />
 https://cloud.google.com/security-scanner/docs/<br />
 45. Using Cloud Security Scanner with App Engine, Compute Engine, or GKE<br />
 https://cloud.google.com/security-scanner/docs/scanning<br />
+46. Best Practices for DDoS Protection and Mitigation on Google Cloud Platform<br />
+https://cloud.google.com/files/GCPDDoSprotection-04122016.pdf<br />
+47. Best practices for enterprise organizations<br />
+https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations#networking-and-security<br />
 
 ### MongoDB Atlas
 1. MongoDB Atlas - GCP<br />
