@@ -117,7 +117,9 @@ docker pull casperfrx/mongodb-shell<br />
 docker images -a<br />
 docker tag casperfrx/mongodb-shell asia.gcr.io/official-website-dev/mongo-shell:v1<br />
 docker push asia.gcr.io/official-website-dev/mongo-shell:v1<br />
-
+51. Bash Completion<br />
+source <(kubectl completion bash)<br />
+kubectl <TAB><TAB><br />
 
 ## Reference Link
 ### GCP
@@ -247,5 +249,5 @@ https://github.com/GoogleCloudPlatform/kubernetes-engine-samples/tree/master/clo
 https://stackoverflow.com/questions/51944817/google-cloud-build-deploy-to-gke-private-cluster<br />
 11. Using Container Registry's Docker Hub mirror<br />
 https://cloud.google.com/container-registry/docs/using-dockerhub-mirroring<br />
-12. List All Container Images Running in a Cluster<br />
+12. List All Container Images Running in a Cluster<br /> 
 https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/<br />
