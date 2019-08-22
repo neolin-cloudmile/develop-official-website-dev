@@ -112,7 +112,7 @@ kubectl get pods -n default -o=jsonpath='{range .items[*]}{"\n"}{.metadata.name}
 kubectl get pods esp-echo-84949c578-nfrz4 -n default -o jsonpath='{.spec.containers[*].name}'<br />
 49. Connect to a container from multi containers of single Pod<br />
 kubectl exec -it esp-echo-84949c578-nfrz4 -c echo -- /bin/bash<br />
-50.<br />
+50. Pull images and push to gcr<br />
 docker pull casperfrx/mongodb-shell<br />
 docker images -a<br />
 docker tag casperfrx/mongodb-shell asia.gcr.io/official-website-dev/mongo-shell:v1<br />
@@ -120,6 +120,10 @@ docker push asia.gcr.io/official-website-dev/mongo-shell:v1<br />
 51. Bash Completion<br />
 source <(kubectl completion bash)<br />
 kubectl <TAB><TAB><br />
+52. List more info for Pod<br />
+kubectl get pods -o=wide<br />
+53. Output in YAML format<br />
+kubectl get pods -o=yaml<br />
 
 ## Reference Link
 ### GCP
