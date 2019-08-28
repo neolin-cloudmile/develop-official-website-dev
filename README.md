@@ -124,6 +124,8 @@ kubectl <TAB><TAB><br />
 kubectl get pods -o=wide<br />
 53. Output in YAML format<br />
 kubectl get pods -o=yaml<br />
+54. List the tags in a specified image<br />
+gcloud container images list-tags gcr.io/cloudsql-docker/gce-proxy<br />
 
 ## Reference Link
 ### GCP
