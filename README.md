@@ -125,7 +125,11 @@ kubectl get pods -o=wide<br />
 53. Output in YAML format<br />
 kubectl get pods -o=yaml<br />
 54. List the tags in a specified image<br />
-gcloud container images list-tags gcr.io/cloudsql-docker/gce-proxy<br />
+gcloud container images list-tags gcr.io/cloudsql-docker/gce-proxy
+55. Generating a kubeconfig entry using a private cluster's internal IP address<br />
+gcloud container clusters get-credentials --internal-ip official-website-dev-cluster --region asia-east1
+56.
+gcloud compute ssh --project official-website-dev --zone asia-east1-b database-manager
 
 ## Reference Link
 ### GCP
@@ -221,6 +225,12 @@ https://cloud.google.com/security-scanner/docs/scanning<br />
 https://cloud.google.com/files/GCPDDoSprotection-04122016.pdf<br />
 47. Best practices for enterprise organizations<br />
 https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations#networking-and-security<br />
+48. Generating a kubeconfig entry using a private cluster's internal IP address<br />
+https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl#internal_ip
+49. Service Project Admins for some subnets<br />
+https://cloud.google.com/vpc/docs/provisioning-shared-vpc#networkuseratsubnet
+50. Connecting to Linux instances<br />
+https://cloud.google.com/compute/docs/instances/connecting-to-instance#gcetools
 
 ### MongoDB Atlas
 1. MongoDB Atlas - GCP<br />
