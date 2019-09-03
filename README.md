@@ -130,6 +130,9 @@ gcloud container images list-tags gcr.io/cloudsql-docker/gce-proxy
 gcloud container clusters get-credentials --internal-ip official-website-dev-cluster --region asia-east1
 56. Connect to Instance from Cloud Shell<br />
 gcloud compute ssh --project official-website-dev --zone asia-east1-b database-manager
+57. Fetch credentials for a running cluster<br />
+gcloud container clusters get-credentials official-website-dev-cluster --region=asia-east1
+
 
 ## Reference Link
 ### GCP
