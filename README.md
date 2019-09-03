@@ -128,7 +128,7 @@ kubectl get pods -o=yaml<br />
 gcloud container images list-tags gcr.io/cloudsql-docker/gce-proxy
 55. Generating a kubeconfig entry using a private cluster's internal IP address<br />
 gcloud container clusters get-credentials --internal-ip official-website-dev-cluster --region asia-east1
-56.
+56. Connect to Instance from Cloud Shell<br />
 gcloud compute ssh --project official-website-dev --zone asia-east1-b database-manager
 
 ## Reference Link
