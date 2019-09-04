@@ -247,6 +247,16 @@ https://docs.mongodb.com/manual/mongo/<br />
 https://docs.mongodb.com/manual/reference/mongo-shell/<br />
 4. MongoDB Atlas - Set up a Network Peering Connection<br />
 https://docs.atlas.mongodb.com/security-vpc-peering/<br />
+5. PHP Connect to MongoDB<br /> 
+https://www.php.net/manual/en/mongodb.tutorial.library.php
+6.MongoDB PHP Driver - Installation<br />
+https://docs.mongodb.com/ecosystem/drivers/php/
+7. Docker hub for PHP<br />
+https://hub.docker.com/_/php
+8. mongo-php-driver<br /> 
+https://github.com/mongodb/mongo-php-driver
+9. mongo-php-library<br />
+https://github.com/mongodb/mongo-php-library
 
 ### Kubernetes & Others 
 1. Kubernetes Online Documents
