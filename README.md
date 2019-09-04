@@ -134,6 +134,8 @@ gcloud compute ssh --project official-website-dev --zone asia-east1-b database-m
 gcloud container clusters get-credentials official-website-dev-cluster --region=asia-east1
 58. Exposing an External IP Address to Access an Application in a Cluster<br />
 kubectl expose deployment wordpress --type=LoadBalancer
+59. Connect to MongoDB
+mongo "mongodb+srv://official-website-dev-mongodb-ixaec.gcp.mongodb.net/test" --username $username --password $password
 
 ## Reference Link
 ### GCP
