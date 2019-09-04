@@ -132,7 +132,8 @@ gcloud container clusters get-credentials --internal-ip official-website-dev-clu
 gcloud compute ssh --project official-website-dev --zone asia-east1-b database-manager
 57. Fetch credentials for a running cluster<br />
 gcloud container clusters get-credentials official-website-dev-cluster --region=asia-east1
-
+58. Exposing an External IP Address to Access an Application in a Cluster<br />
+kubectl expose deployment wordpress --type=LoadBalancer
 
 ## Reference Link
 ### GCP
