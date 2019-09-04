@@ -249,7 +249,7 @@ https://docs.mongodb.com/manual/reference/mongo-shell/<br />
 https://docs.atlas.mongodb.com/security-vpc-peering/<br />
 5. PHP Connect to MongoDB<br /> 
 https://www.php.net/manual/en/mongodb.tutorial.library.php
-6.MongoDB PHP Driver - Installation<br />
+6. MongoDB PHP Driver - Installation<br />
 https://docs.mongodb.com/ecosystem/drivers/php/
 7. Docker hub for PHP<br />
 https://hub.docker.com/_/php
