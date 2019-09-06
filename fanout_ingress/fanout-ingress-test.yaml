@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: fanout-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: fanout-ingress-dev.io
+    http:
+      paths:
+      - path: /v1/
+        backend:
+          serviceName: web
+          servicePort: 8080
+      - path: /v2/
+        backend:
+          serviceName: web2
+          servicePort: 8080
