@@ -137,14 +137,14 @@ kubectl expose deployment wordpress --type=LoadBalancer
 59. Connect to MongoDB<br />
 mongo "mongodb+srv://official-website-dev-mongodb-ixaec.gcp.mongodb.net/test" --username $username --password $password
 60. List and Delete the container images of GCR<br />
-gcloud container images list --repository=asia.gcr.io/official-website-dev
-gcloud container images list-tags asia.gcr.io/official-website-dev/mongodbphp
-gcloud container images delete asia.gcr.io/official-website-dev/mongodbphp:v6
+gcloud container images list --repository=asia.gcr.io/official-website-dev<br />
+gcloud container images list-tags asia.gcr.io/official-website-dev/mongodbphp<br />
+gcloud container images delete asia.gcr.io/official-website-dev/mongodbphp:v6<br />
 61. dig<br />
-dig +short test.airlines.api.amadeus.com
-dig +short +trace test.airlines.api.amadeus.com
-dig +short amadeus-airline-it.dn.apigee.net
-dig +short +trace amadeus-airline-it.dn.apigee.net
+dig +short test.airlines.api.amadeus.com<br />
+dig +short +trace test.airlines.api.amadeus.com<br />
+dig +short amadeus-airline-it.dn.apigee.net<br />
+dig +short +trace amadeus-airline-it.dn.apigee.net<br />
 
 ## Reference Link
 ### GCP
