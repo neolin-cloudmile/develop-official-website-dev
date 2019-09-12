@@ -140,6 +140,11 @@ mongo "mongodb+srv://official-website-dev-mongodb-ixaec.gcp.mongodb.net/test" --
 gcloud container images list --repository=asia.gcr.io/official-website-dev
 gcloud container images list-tags asia.gcr.io/official-website-dev/mongodbphp
 gcloud container images delete asia.gcr.io/official-website-dev/mongodbphp:v6
+61. dig<br />
+dig +short test.airlines.api.amadeus.com
+dig +short +trace test.airlines.api.amadeus.com
+dig +short amadeus-airline-it.dn.apigee.net
+dig +short +trace amadeus-airline-it.dn.apigee.net
 
 ## Reference Link
 ### GCP
