@@ -146,6 +146,9 @@ dig +short +trace test.airlines.api.amadeus.com<br />
 dig +short amadeus-airline-it.dn.apigee.net<br />
 dig +short +trace amadeus-airline-it.dn.apigee.net<br />
 
+62. Enter the shell environment of Pod
+kubectl exec -it dynatrace-oneagent-operator-5b97fb6685-4pn59 -n dynatrace /bin/sh
+
 ## Reference Link
 ### GCP
 1. Cloud SDK - gcloud reference - overview
